@@ -4,7 +4,10 @@ function Contact() {
   return (
     <section id="contact" className={styles.container}>
       <h1 className="sectionTitle">Contact</h1>
-      <form action="" netlify>
+      <form action="" name="subscribe"
+      method="POST"
+      netlify-honeypot="bot-field"
+      data-netlify="true">
         <div className="formGroup">
           <label htmlFor="name" hidden  >
             Name
